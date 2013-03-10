@@ -98,11 +98,13 @@ public class Fraction implements Comparable<Fraction> {
 		}
 	}
 	
-	public void printSelf(char arg) {
-		if(arg=='w')
+	public void printSelf(String arg) {
+		if(arg.equals("improper"))
 			System.out.printf("%d/%d\n", this.numerator, this.denominator);
-		else if(arg == 'r')
-			System.out.printf("%d+%d/%d\n", this.numerator/this.denominator, this.numerator-(this.numerator/this.denominator)*this.denominator, this.denominator);
+		else if(arg.equals("proper") && this.numerator/this.denominator !=0 )
+			System.out.printf("%d %d/%d\n", this.numerator/this.denominator, this.numerator-(this.numerator/this.denominator)*this.denominator, this.denominator);
+		else 
+			this.printSelf("improper");
 	}
 	
 	public String toString(){
