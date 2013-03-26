@@ -2,7 +2,7 @@ package fractions;
 
 import java.util.*;
 
-public class Fractions {
+public final class Fractions {
 	
 	public static void sort(Fraction[] fracArr) {
 		Arrays.sort(fracArr);

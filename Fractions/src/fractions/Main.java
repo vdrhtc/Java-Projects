@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-			System.out.println("For operating with two fractions a/b and c/d you should enter four ints a b c d and a string 'proper' or 'improper' to choose representation style"); 
+			System.out.println("For operating with two fractions a/b and c/d you should enter four ints a b c d and a string 'proper' or 'improper' to choose representation style\nExample: 43 56 78 98 proper"); 
 		
 		Scanner in = new Scanner(System.in);
 
